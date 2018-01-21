@@ -73,40 +73,26 @@ function endGame() {
 
   return alert('YOU LOSE!')
 }
- 
-function move(el) {
-  var top = 0
- 
-  function step() {
-    el.style.top = `${top += 2}px`
- 
-    if (top < 200) {
-      window.requestAnimationFrame(step)
-    }
-  }
- 
-  window.requestAnimationFrame(step)
-}
 
 function moveDodger(e) {
   //if the key is the right arrow key, move the doger to the right
   //if the key is the left arrow key, move the dodger to the left
-  //Otherwise, do nothing. 
-  if (key.which === 37){ //checks if left 
+  //Otherwise, do nothing.
+  if (key.which === 37){ //checks if left
     moveDodgerLeft();
   } else if( key.which === 39){//checks if right
     moveDodgerRight();
-  } 
+  }
   //use window.requestAnimationFrame to move the dodger
-  
+
 }
 
 function moveDodgerLeft() {
-  
+
 }
 
 function moveDodgerRight() {
-  
+
 }
 
 function positionToInteger(p) {
