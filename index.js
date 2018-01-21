@@ -92,13 +92,13 @@ function moveDodgerLeft() {
   //find the current location/number of pixels
   //subtract 4 from that number of pixels
   //assign new value to position
-  var currentPositon = $("#dodger").style.left
-  $("#dodger").style.left = positionToInteger(currentPositon) - 4;
+  var currentPositon = document.getElementById("dodger").style.left
+  document.getElementById("dodger").style.left = positionToInteger(currentPositon) - 4;
 }
 
 function moveDodgerRight() {
- var myPosition = $("#dodger").style.left
- $("#dodger").style.left = positionToInteger(myPosition) + 4;
+ var myPosition = document.getElementById("dodger").style.left
+ document.getElementById("dodger").style.left = positionToInteger(myPosition) + 4;
 }
 
 /*
