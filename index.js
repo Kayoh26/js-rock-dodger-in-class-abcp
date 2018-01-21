@@ -92,8 +92,8 @@ function moveDodgerLeft() {
   //find the current location/number of pixels
   //subtract 4 from that number of pixels
   //assign new value to position
-  var curPos = $("#dodger").style.left
-  $("#dodger").style.left = positionToInteger(curPos) - 4;
+  var currentPositon = $("#dodger").style.left
+  $("#dodger").style.left = positionToInteger(currentPositon) - 4;
 }
 
 function moveDodgerRight() {
