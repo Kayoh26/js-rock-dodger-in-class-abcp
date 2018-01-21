@@ -75,6 +75,8 @@ function endGame() {
 }
 
 function moveDodger(e) {
+  e.preventDefault();
+  e.stopPropagation();
   //if the key is the right arrow key, move the doger to the right
   //if the key is the left arrow key, move the dodger to the left
   //Otherwise, do nothing.
@@ -88,6 +90,7 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
+  
 
 }
 
