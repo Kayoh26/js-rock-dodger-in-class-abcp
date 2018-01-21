@@ -89,13 +89,13 @@ function moveDodger(e) {
 }
 
 function moveDodgerLeft() {
-  var curPos = $("#dodger").style.left 
+  var curPos = $("#dodger").style.left
   $("#dodger").style.left = positionToInteger(curPos) - 4;
 }
 
 function moveDodgerRight() {
-  var curPos = $("#dodger").style.left 
-  $("#dodger").style.left = positionToInteger(curPos) + 4;
+  var myPosition = $("#dodger").style.left
+  $("#dodger").style.left = positionToInteger(myPosition) + 4;
 }
 
 function positionToInteger(p) {
